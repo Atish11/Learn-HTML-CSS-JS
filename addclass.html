@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.mero{background-color: green;color: #fff}
+	</style>
+</head>
+<body>
+<p>Hello Nepal</p>
+<button id="one">Add Class</button>
+<button id="re">Remove Class</button>
+<button id="two">Toggle Class</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function()
+		{
+			$("#one").click(function()
+		{
+			$("p").addClass("mero");
+		})
+			$("#re").click(function()
+		{
+			$("p").removeClass("mero");
+		})
+				$("#two").click(function()
+		{
+			$("p").toggleClass("mero");
+		})
+	})
+</script>
+</body>
+</html>
